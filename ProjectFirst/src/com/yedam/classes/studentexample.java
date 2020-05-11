@@ -10,7 +10,7 @@ public class studentexample {
 		stu.study();
 		stu.eat("물");
 		stu.exercise();
-		System.out.println("이름은 :"+stu.name + ","+ "나이는" + stu.age);
+		System.out.println("이름은 :"+stu.name + ","+ "나이는" + stu.age + "키는:" + stu.height );
 		
 		student stu1 = new student(); //new라는 키워드로 instance 만듦
 		stu1.name = "yong";
@@ -43,12 +43,11 @@ public class studentexample {
 		s1[1] = stu1;
 		s1[2] = stu2;
 		
-		String inputStr = "won";
-		int stunum = 0;
+		String inputStr = "Son";
 		for(student stud : s1) {
 			//System.out.println(stud.name+"/" + stud.age);
 			if (stud.name.equals(inputStr)) {
-				System.out.println("s1["+stunum++ +"]"+ "="+inputStr);
+				System.out.println(stud.name+ "=" + inputStr);
 			}
 		}
 	}
