@@ -33,7 +33,7 @@ public class Accountexample {
 
 				for (Account acc : accounts) {
 					if (acc != null) { // 전체 배열중에 값이 있는 경우에만 출력(null제외)
-						System.out.println("계좌번호는 = " + acc.getAno() + "예금주:" + getowner() + "잔액:" + getBalance());
+						System.out.println("계좌번호는 = " + acc.getAno() + "예금주:" + acc.getOwner() + "잔액:" + acc.getBalance());
 					}
 				}
 			} else if (menu == 3) {

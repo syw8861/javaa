@@ -1,9 +1,9 @@
 package com.yedam.classes.statics;
 
 public class Account {
-	private String ano;
-	private String owner;
-	private int balance;
+	private String ano;//계좌번호
+	private String owner;//예금주
+	private int balance;//잔액
 
 	public Account(String ano, String owner, int balance) {
 		this.ano = ano;
