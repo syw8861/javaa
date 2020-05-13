@@ -9,14 +9,16 @@ public class Freinds {
 	void freindinfo() {
 		System.out.println("조회할 친구이름");
 		System.out.println("조회할 이름 입력:");
-		String name = scn.nextLine();
-		for(int i=0; i<freindsinfo.length; i++) {
-			if(freindsinfo[i] != null && freindsinfo[i].equals(name)) {
-				freindsinfo[i].showInfo;
+		String fname = scn.nextLine();
+		for(Freind fdi : freindsinfo) {
+			if(fdi != null && fdi.getFname().equals(fname)) {
+				fdi.showInfo();
+			}
+		}
 	}
 	public void addressList(){
 		System.out.println("친구목록");
-		for( Freind fnd : freindsinfo) {
+		for(Freind fnd : freindsinfo) {
 			if(fnd != null ) {
 				fnd.showInfo();
 			}
@@ -26,7 +28,7 @@ public class Freinds {
 	public void execute() { // 메인메소드 역할
 		while (true) {
 			System.out.println("====================");
-			System.out.println("1.친구  2.친구목록  3.조회  4.종료 ");
+			System.out.println("1.친구등록  2.친구목록  3.조회  4.종료 ");
 			System.out.println("====================");
 			System.out.println("선택 > ");
 			int menu = scn.nextInt();
@@ -36,8 +38,8 @@ public class Freinds {
 			} else if (menu == 2) {// 2.목록
 				addressList();
 			} else if (menu == 3) {// 2.친구내용출력
-				
-			} else if (menu == 3) {// 4.종료
+				freindinfo();
+			} else if (menu == 4) {// 4.종료
 				System.out.println("종료");
 				break;
 			}
