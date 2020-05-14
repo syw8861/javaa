@@ -16,6 +16,6 @@ public class Freind {
 		this.fname = fname;
 	}
 	void showInfo() {
-		System.out.println();
+		System.out.println("이름:" + this.fname + "폰번호:" + this.phoneNumber);
 	}
 }

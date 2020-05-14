@@ -9,6 +9,6 @@ public class CFreind extends Freind {
 	}
 	@Override
 	void showInfo() {
-		System.out.println("이름:" + fname + "폰번호:" + phoneNumber + "부서:" + department);
+		System.out.println("이름:" + this.fname + "폰번호:" + this.phoneNumber + "부서:" + department);
 	}
 }
