@@ -24,11 +24,11 @@ public class BoardServiceImpl implements BoardService
 	@Override
 	public void removeBoard(List<Board> list, String title)
 	{
-		for (Board board1 : list)
+		for(int i=0; i<list.size(); i++)
 		{
-			if (board1.title.equals(title))
-			{
-				list.remove(board1);
+			if(list.get(i).getTitle().equals(title)) 
+		    {
+				list.remove(i);
 			}
 		}
 	}
@@ -43,6 +43,15 @@ public class BoardServiceImpl implements BoardService
 				board1.title = board.title;
 				board1.content = board.content;
 				board1.writer = board.writer;
+				//for(int i=0; i<list.size(); i++)
+//				{
+//					if(list.get(i).getTitle().equals(board.getTitle())
+//					{
+//					   list.get(i).serContent(board.getContent());
+//					}
+//				}
+				
+				
 			}
 		}
 	}

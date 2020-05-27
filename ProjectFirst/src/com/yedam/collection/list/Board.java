@@ -38,15 +38,15 @@ public class Board
 		return writer;
 	}
 
-	@Override
-	public String toString()
-	{
-		return "Board [글제목=" + title + ", 내용=" + content + ", 작성자=" + writer + "]";
-	}
-
 	public void setWriter(String writer)
 	{
 		this.writer = writer;
 	}
+	@Override
+	public String toString()
+	{
+		return  title + ", 내용=" + content + ", 작성자=" + writer + "]";
+	}
+
 }
 
