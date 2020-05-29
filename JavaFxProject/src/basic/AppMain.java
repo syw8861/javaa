@@ -20,7 +20,7 @@ public class AppMain extends Application
 	}
 
 	
-	public AppMain() //실행1번
+	public AppMain() //생성자 호출~/실행1번 /
 	{
 		System.out.println(Thread.currentThread().getName()+ " : AppMain() 실행.");
 	}
@@ -67,7 +67,6 @@ public class AppMain extends Application
 		
 		Scene scene = new Scene(root);
 		primaryStage.setScene(scene); //primaryStage 스테이지에 setScene써서 씬(root) 붙여주기
-		
 		
 		primaryStage.show(); //stage클래스가 가지고 있는 윈도우를 띄우는
 		System.out.println(Thread.currentThread().getName()+ " : start() 실행.");
